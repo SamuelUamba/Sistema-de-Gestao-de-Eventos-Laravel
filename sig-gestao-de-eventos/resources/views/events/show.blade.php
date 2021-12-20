@@ -24,10 +24,11 @@
                 <ion-icon name="people-outline"></ion-icon> Dono do Evento: {{$eventOwner['name']}}
             </p>
             <form action="/events/join/{{$event->id}}" method="post">
+            
                 @csrf
                 <a href="/events/join/{{$event->id}}" class="btn btn-primary" id="event-submit" onclick="event.preventDefault();
            this.closest('form').submit(); ">
-                    Confirmar Presenca</a>
+                  <ion-icon name="thumbs-up-outline" style="color: blue;"></ion-icon> like e Confirmar Presenca</a>
             </form>
             <h3>O Evento conta com: </h3>
             <ul id="itens-list">
@@ -40,7 +41,7 @@
             </ul>
         </div>
         <div class="col-md-12" id="description-container">
-            <h3> Sobre o Evento</h3>
+            <h3> Sobre o Post</h3>
             <p class="event-description">{{$event->descricao}}</p>
         </div>
     </div>

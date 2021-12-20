@@ -1,7 +1,7 @@
 /*Estilizacao Geral*/
 
 *{
-    font-family:'Roboto' ;
+    font-family:'Roboto',Arial, Helvetica, sans-serif ;
 }
 body{
     min-height: 100vh;
@@ -67,7 +67,7 @@ header{
     background-image: url(../img/fundo.jfif);
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 200px;
     padding: 50px;
     text-align: center;
    

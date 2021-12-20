@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Event;
+use App\Models\event_user;
 use App\Models\User;
 
 class EventController extends Controller
@@ -74,6 +75,7 @@ class EventController extends Controller
                                          'eventsasparticipant'=>$eventsAsParticipant]);
     }
 
+   
 
  
 
@@ -117,12 +119,15 @@ class EventController extends Controller
     }
 
     public function joinEvent($id){
+
+        $event =Event::findOrFail($id); 
         $user = auth()->user();
         $user->eventsAsParticipant()->attach($id);
-        $event =Event::findOrFail($id); 
         return Redirect('/dashboard')->with('msg',
         'Sua Participação Foi Cofirmmada
-        para '.$event->titlo); 
+        para '.$event->titlo ); 
+
+        
 
     }
     

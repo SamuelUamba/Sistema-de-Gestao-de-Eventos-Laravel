@@ -30,21 +30,23 @@
       <div class="collapse navbar-collapse" id="navbar">
         <a href="/" class="navbar-brand">
           <img src="/img/emblema.jpg" alt=" fundo">
-         
         </a>
         <h2>Portal de Eventos Online</h2><br>
+        
         <ul class="navbar-nav">
           <li class="nav-item">
             <a href="/" class="nav-link">Pagina Inicial</a>
           </li>
           <li class="nav-item">
-            <a href="/events/create" class="nav-link">Criar um Evento</a>
+            <a href="/events/create" class="nav-link">Postar Eventos</a>
           </li>
           @auth
           <li class="nav-item">
             <a href="/dashboard" class="nav-link">Meus Eventos</a>
           </li>
-
+          <li class="nav-item">
+            <a href="#" class="nav-link">Perfil</a>
+          </li>
           <li class="nav-item">
             <form action="/logout" method="POST">
               @csrf
@@ -66,8 +68,10 @@
             
           </li>
           @endguest
-        </ul>
+        </ul><br>
+        
       </div>
+     
     </nav>
 
   

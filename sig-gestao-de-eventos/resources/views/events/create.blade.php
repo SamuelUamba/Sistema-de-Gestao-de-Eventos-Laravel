@@ -9,7 +9,7 @@
 @section('content')
 
 <div id="event-create-container" class="col-md-6 offset-md-3">
-    <h1>Adicione um evento</h1>
+    <h1>Adicione e poste um evento</h1>
 
     <form class="row g-3" action="/events" method="POST" enctype="multipart/form-data">
         @csrf
@@ -60,7 +60,7 @@
             </div>
         </div>
         <div class="col-12">
-            <button type="submit" class="btn btn-primary">Criar Evento</button>
+            <button type="submit" class="btn btn-primary">Postar</button>
         </div>
     </form>
 

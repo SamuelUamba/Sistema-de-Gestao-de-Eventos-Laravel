@@ -18,7 +18,7 @@ class AddUserIdToEventsTable extends Migration
         });
     }
 
-    /**
+    /**user
      * Reverse the migrations.
      *
      * @return void

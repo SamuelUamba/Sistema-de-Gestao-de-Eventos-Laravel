@@ -17,7 +17,7 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Nome</th>
-                    <th scope="col">Participantes</th>
+                    <th scope="col">likes e Confirmados</th>
                     <th scope="col">Accoes</th>
                 </tr>
             </thead>

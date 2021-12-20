@@ -19,8 +19,8 @@
   @if($search)
    <h2>Buscando por: {{$search}} </h2>
    @else
-   <h2>Proximos Eventos </h2>
-   <p class="subtitle">Veja os Eventos dos próximos dias</p>
+   <h2>Posts de Eventos </h2>
+   <p class="subtitle">Eventos postados para  próximos dias</p>
   @endif
   
   <div id="cards-container" class="row">
@@ -30,7 +30,7 @@
       <div class="card-body">
         <p class="card-date">{{date('d/m/Y',strtotime($event->data))}}</p>
         <h5 class="card-title">{{$event -> titlo}}</h5>
-        <p class="card-participants">{{count($event->users)}}  participantes Confirmados</p>
+        <p class="card-participants"><ion-icon name="thumbs-up-outline" style="color: blue;" ></ion-icon > likes: {{count($event->users)}}</p>
         <a href="/events/{{$event->id}}" class="btn btn-primary">Saber mais</a>
       </div>
     </div>
